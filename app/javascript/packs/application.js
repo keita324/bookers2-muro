@@ -20,3 +20,6 @@ ActiveStorage.start()
 
 global.$ = jQuery;
 window.$ = jQuery;
+
+//= require jquery
+//= require rails-ujs
