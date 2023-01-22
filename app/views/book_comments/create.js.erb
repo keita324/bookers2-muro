@@ -1,3 +1,12 @@
-$("textarea").val('');
+$("comment-textarea").val('');
 $('.book-comments-counter').html("<%= j(render 'book_comments/counter', book: @comment.book) %>")
 $('.book-comments-index').html("<%= j(render 'book_comments/index', book: @comment.book) %>")
+
+ <!--('.book-comments-index')→書き換えるところ-->
+ <!--.を#で呼び出す→id指定のときは#で呼び出し(cssの書き方と同じ)-->
+ 
+ <!--.html→これ以降のhtmlを書き換える-->
+ <!--book: @comment.bookはコメント後なので変数の再定義が必要になる-->
+ 
+ <!--$("textarea").val('');-->
+ <!--入力フォームを空にする-->

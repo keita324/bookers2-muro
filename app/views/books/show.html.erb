@@ -31,9 +31,11 @@
       </table>
       
       <div class="book-comments-index">
+        <!--ここのクラス名で判断して書き換えてる-->
         <%= render "book_comments/index", book: @book %>
       </div>
       
+      <!--ここにclassが付いてたらcreate.jsで消す名前が変わる-->
       <%= render "book_comments/form", book: @book, book_comment: @book_comment %>
       
     </div>
